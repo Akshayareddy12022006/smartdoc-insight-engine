@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
   FileText, Download, ExternalLink, Clock, FileType,
-  Video, Image, VolumeUp, Languages, BarChart, MindMapping,
+  Video, Image, Volume, Languages, BarChart, Network,
   ListChecks, Share
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -191,7 +191,7 @@ const DocumentResult = ({ document }: DocumentResultProps) => {
             <TabsContent value="infographic">
               <Card>
                 <CardContent className="p-6 flex flex-col items-center justify-center space-y-4">
-                  <MindMapping className="h-16 w-16 text-primary/60" />
+                  <Network className="h-16 w-16 text-primary/60" />
                   <h3 className="text-xl font-medium">Generate Infographic</h3>
                   <p className="text-center text-muted-foreground max-w-md">
                     Convert key insights into an infographic or mind map visualization.
@@ -201,7 +201,7 @@ const DocumentResult = ({ document }: DocumentResultProps) => {
                       <BarChart className="mr-2 h-4 w-4" /> Chart
                     </Button>
                     <Button>
-                      <MindMapping className="mr-2 h-4 w-4" /> Mind Map
+                      <Network className="mr-2 h-4 w-4" /> Mind Map
                     </Button>
                   </div>
                 </CardContent>
@@ -237,13 +237,13 @@ const DocumentResult = ({ document }: DocumentResultProps) => {
             <TabsContent value="audio">
               <Card>
                 <CardContent className="p-6 flex flex-col items-center justify-center space-y-4">
-                  <VolumeUp className="h-16 w-16 text-primary/60" />
+                  <Volume className="h-16 w-16 text-primary/60" />
                   <h3 className="text-xl font-medium">Audio Summary</h3>
                   <p className="text-center text-muted-foreground max-w-md">
                     Listen to an audio version of the document summary.
                   </p>
                   <Button>
-                    <VolumeUp className="mr-2 h-4 w-4" /> Generate Audio
+                    <Volume className="mr-2 h-4 w-4" /> Generate Audio
                   </Button>
                 </CardContent>
               </Card>
@@ -288,7 +288,7 @@ const DocumentResult = ({ document }: DocumentResultProps) => {
                       <Video className="mr-2 h-4 w-4" /> Video
                     </Button>
                     <Button variant="outline" className="justify-start">
-                      <VolumeUp className="mr-2 h-4 w-4" /> Audio
+                      <Volume className="mr-2 h-4 w-4" /> Audio
                     </Button>
                     <Button variant="outline" className="justify-start">
                       <FileText className="mr-2 h-4 w-4" /> Markdown
